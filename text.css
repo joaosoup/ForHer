@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+body {
+  background: #cdb4db;
+  color: #1b263b;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+svg path.linear-1 {
+  stroke: white;
+  filter: url(#blur-filter);
+}
+
+.loading {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.loading svg {
+  height: 100%;
+}
+
+.loading .linear-1 {
+  stroke-dasharray: 281;
+  animation: dash 6s infinite linear forwards;
+}
+
+.loading .linear-2 {
+  stroke-dasharray: 300;
+  animation: dash 5s infinite linear forwards;
+}
+
+.loading .linear-3 {
+  stroke-dasharray: 340;
+  animation: dash 4s infinite linear forwards;
+}
+
+.loading .linear-4 {
+  stroke-dasharray: 400;
+  animation: dash 3s infinite linear forwards;
+}
+
+.audio-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audio-button {
+  background-color: #51344d; /* Cor de fundo do botão */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.audio-button:hover {
+  background-color: #5f4bb6; /* Cor de fundo do botão ao passar o mouse */
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 814;
+  }
+  to {
+    stroke-dashoffset: -814;
+  }
+}
+
+h1 {
+  text-shadow: 2px 2px 5px #fb6f92;
+}
+
+a,
+h3 {
+  color: #1b263b;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #69306d;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
